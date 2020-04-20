@@ -14,8 +14,8 @@ parser = argparse.ArgumentParser(description='Universal Style Transfer via Featu
                                 epilog='Supported image file formats are: jpg, jpeg, png')
 parser.add_argument('--outDir', default='outputs', help='The path to save stylized results')
 parser.add_argument('--cuda', default='true', help='Use cuda or not.')
-parser.add_argument('--content', default='D:/Projects/my_deep_transfer/inputs/contents/face.jpg', help='The path of content.')
-parser.add_argument('--style', default='D:/Projects/my_deep_transfer/inputs/styles/brick.jpg', help='The path of style.')
+parser.add_argument('--content', default='D:/Projects/style_transfer_WCT/inputs/contents', help='The path of content.')
+parser.add_argument('--style', default='D:/Projects/style_transfer_WCT/inputs/styles', help='The path of style.')
 parser.add_argument('--finesize', default=400, help='resize image to fineSize x ,leave it to 0 if not resize')
 parser.add_argument('--alpha', type=float, default=0.2, help='Hyperparameter balancing the blending between original content features and WCT-transformed features')
 
